@@ -56,6 +56,9 @@ fork = false
 pid_file_path = ""
 
 [mongod.net]
+#
+connection = false # Used by consumers if there is a connection string and it
+                   # overrides the IP/port pair
 port = 27017
 bind_ip = "0.0.0.0"
 max_incoming_connections = 65536
